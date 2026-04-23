@@ -1807,3 +1807,751 @@ HINT:  Use DROP ... CASCADE to drop the dependent objects too.
 [SQL: 
 DROP TABLE dim_location]
 (Background on this error at: https://sqlalche.me/e/20/2j85)
+2026-04-23 16:54:13,892 - ETL - INFO - 📍 Getting properties: skip=0, limit=10, city=None
+2026-04-23 16:54:14,001 - ETL - INFO - ✅ Found 0 properties
+2026-04-23 16:55:38,816 - ETL - INFO - 📍 Getting properties: skip=0, limit=10, city=ho chi minh
+2026-04-23 16:55:38,822 - ETL - INFO - ✅ Found 0 properties
+2026-04-23 16:56:03,781 - ETL - INFO - 📍 Getting properties: skip=0, limit=10, city=Ho Chi Minh City
+2026-04-23 16:56:03,783 - ETL - INFO - ✅ Found 0 properties
+2026-04-23 17:09:16,502 - ETL - INFO - ✅ ETL Pipeline initialized
+2026-04-23 17:09:16,502 - ETL - INFO - ✅ ETL Pipeline initialized
+2026-04-23 17:09:16,502 - ETL - INFO - ✅ ETL Pipeline initialized
+2026-04-23 17:09:16,502 - ETL - INFO - ✅ ETL Pipeline initialized
+2026-04-23 17:09:16,502 - ETL - INFO - 
+
+============================================================
+2026-04-23 17:09:16,502 - ETL - INFO - 
+
+============================================================
+2026-04-23 17:09:16,502 - ETL - INFO - 
+
+============================================================
+2026-04-23 17:09:16,502 - ETL - INFO - 
+
+============================================================
+2026-04-23 17:09:16,502 - ETL - INFO - 🚀 STARTING ETL PIPELINE
+2026-04-23 17:09:16,502 - ETL - INFO - 🚀 STARTING ETL PIPELINE
+2026-04-23 17:09:16,502 - ETL - INFO - 🚀 STARTING ETL PIPELINE
+2026-04-23 17:09:16,502 - ETL - INFO - 🚀 STARTING ETL PIPELINE
+2026-04-23 17:09:16,502 - ETL - INFO - ============================================================
+2026-04-23 17:09:16,502 - ETL - INFO - ============================================================
+2026-04-23 17:09:16,502 - ETL - INFO - ============================================================
+2026-04-23 17:09:16,502 - ETL - INFO - ============================================================
+2026-04-23 17:09:16,502 - ETL - INFO - 
+============================================================
+2026-04-23 17:09:16,502 - ETL - INFO - 
+============================================================
+2026-04-23 17:09:16,502 - ETL - INFO - 
+============================================================
+2026-04-23 17:09:16,502 - ETL - INFO - 
+============================================================
+2026-04-23 17:09:16,502 - ETL - INFO - 📥 STEP 1: EXTRACT
+2026-04-23 17:09:16,502 - ETL - INFO - 📥 STEP 1: EXTRACT
+2026-04-23 17:09:16,502 - ETL - INFO - 📥 STEP 1: EXTRACT
+2026-04-23 17:09:16,502 - ETL - INFO - 📥 STEP 1: EXTRACT
+2026-04-23 17:09:16,502 - ETL - INFO - ============================================================
+2026-04-23 17:09:16,502 - ETL - INFO - ============================================================
+2026-04-23 17:09:16,502 - ETL - INFO - ============================================================
+2026-04-23 17:09:16,502 - ETL - INFO - ============================================================
+2026-04-23 17:09:16,502 - ETL - INFO - ✅ DataLoader initialized | Raw path: data/raw/
+2026-04-23 17:09:16,502 - ETL - INFO - ✅ DataLoader initialized | Raw path: data/raw/
+2026-04-23 17:09:16,502 - ETL - INFO - ✅ DataLoader initialized | Raw path: data/raw/
+2026-04-23 17:09:16,502 - ETL - INFO - ✅ DataLoader initialized | Raw path: data/raw/
+2026-04-23 17:09:16,502 - ETL - INFO - 
+============================================================
+2026-04-23 17:09:16,502 - ETL - INFO - 
+============================================================
+2026-04-23 17:09:16,502 - ETL - INFO - 
+============================================================
+2026-04-23 17:09:16,502 - ETL - INFO - 
+============================================================
+2026-04-23 17:09:16,512 - ETL - INFO - 🚀 ETL PROCESS STARTED
+2026-04-23 17:09:16,512 - ETL - INFO - 🚀 ETL PROCESS STARTED
+2026-04-23 17:09:16,512 - ETL - INFO - 🚀 ETL PROCESS STARTED
+2026-04-23 17:09:16,512 - ETL - INFO - 🚀 ETL PROCESS STARTED
+2026-04-23 17:09:16,512 - ETL - INFO - ============================================================
+
+2026-04-23 17:09:16,512 - ETL - INFO - ============================================================
+
+2026-04-23 17:09:16,512 - ETL - INFO - ============================================================
+
+2026-04-23 17:09:16,512 - ETL - INFO - ============================================================
+
+2026-04-23 17:09:16,512 - ETL - INFO - ============================================================
+2026-04-23 17:09:16,512 - ETL - INFO - ============================================================
+2026-04-23 17:09:16,512 - ETL - INFO - ============================================================
+2026-04-23 17:09:16,512 - ETL - INFO - ============================================================
+2026-04-23 17:09:16,512 - ETL - INFO - 🔄 LOADING DIMENSION TABLES
+2026-04-23 17:09:16,512 - ETL - INFO - 🔄 LOADING DIMENSION TABLES
+2026-04-23 17:09:16,512 - ETL - INFO - 🔄 LOADING DIMENSION TABLES
+2026-04-23 17:09:16,512 - ETL - INFO - 🔄 LOADING DIMENSION TABLES
+2026-04-23 17:09:16,513 - ETL - INFO - ============================================================
+2026-04-23 17:09:16,513 - ETL - INFO - ============================================================
+2026-04-23 17:09:16,513 - ETL - INFO - ============================================================
+2026-04-23 17:09:16,513 - ETL - INFO - ============================================================
+2026-04-23 17:09:16,525 - ETL - INFO -   ✅ location             | Records:      417
+2026-04-23 17:09:16,525 - ETL - INFO -   ✅ location             | Records:      417
+2026-04-23 17:09:16,525 - ETL - INFO -   ✅ location             | Records:      417
+2026-04-23 17:09:16,525 - ETL - INFO -   ✅ location             | Records:      417
+2026-04-23 17:09:16,530 - ETL - INFO -   ✅ property_type        | Records:        1
+2026-04-23 17:09:16,530 - ETL - INFO -   ✅ property_type        | Records:        1
+2026-04-23 17:09:16,530 - ETL - INFO -   ✅ property_type        | Records:        1
+2026-04-23 17:09:16,530 - ETL - INFO -   ✅ property_type        | Records:        1
+2026-04-23 17:09:16,543 - ETL - INFO -   ✅ time                 | Records:    1,096
+2026-04-23 17:09:16,543 - ETL - INFO -   ✅ time                 | Records:    1,096
+2026-04-23 17:09:16,543 - ETL - INFO -   ✅ time                 | Records:    1,096
+2026-04-23 17:09:16,543 - ETL - INFO -   ✅ time                 | Records:    1,096
+2026-04-23 17:09:16,547 - ETL - INFO -   ✅ transaction_type     | Records:        2
+2026-04-23 17:09:16,547 - ETL - INFO -   ✅ transaction_type     | Records:        2
+2026-04-23 17:09:16,547 - ETL - INFO -   ✅ transaction_type     | Records:        2
+2026-04-23 17:09:16,547 - ETL - INFO -   ✅ transaction_type     | Records:        2
+2026-04-23 17:09:16,548 - ETL - INFO - ============================================================
+2026-04-23 17:09:16,548 - ETL - INFO - ============================================================
+2026-04-23 17:09:16,548 - ETL - INFO - ============================================================
+2026-04-23 17:09:16,548 - ETL - INFO - ============================================================
+2026-04-23 17:09:16,548 - ETL - INFO - ============================================================
+2026-04-23 17:09:16,548 - ETL - INFO - ============================================================
+2026-04-23 17:09:16,548 - ETL - INFO - ============================================================
+2026-04-23 17:09:16,548 - ETL - INFO - ============================================================
+2026-04-23 17:09:16,549 - ETL - INFO - 🔄 LOADING FACT TABLE
+2026-04-23 17:09:16,549 - ETL - INFO - 🔄 LOADING FACT TABLE
+2026-04-23 17:09:16,549 - ETL - INFO - 🔄 LOADING FACT TABLE
+2026-04-23 17:09:16,549 - ETL - INFO - 🔄 LOADING FACT TABLE
+2026-04-23 17:09:16,549 - ETL - INFO - ============================================================
+2026-04-23 17:09:16,549 - ETL - INFO - ============================================================
+2026-04-23 17:09:16,549 - ETL - INFO - ============================================================
+2026-04-23 17:09:16,549 - ETL - INFO - ============================================================
+2026-04-23 17:09:16,582 - ETL - INFO -   ✅ Fact table loaded | Records: 50,343
+2026-04-23 17:09:16,582 - ETL - INFO -   ✅ Fact table loaded | Records: 50,343
+2026-04-23 17:09:16,582 - ETL - INFO -   ✅ Fact table loaded | Records: 50,343
+2026-04-23 17:09:16,582 - ETL - INFO -   ✅ Fact table loaded | Records: 50,343
+2026-04-23 17:09:16,582 - ETL - INFO - ============================================================
+2026-04-23 17:09:16,582 - ETL - INFO - ============================================================
+2026-04-23 17:09:16,582 - ETL - INFO - ============================================================
+2026-04-23 17:09:16,582 - ETL - INFO - ============================================================
+2026-04-23 17:09:16,582 - ETL - INFO - 
+✅ All data loaded successfully!
+2026-04-23 17:09:16,582 - ETL - INFO - 
+✅ All data loaded successfully!
+2026-04-23 17:09:16,582 - ETL - INFO - 
+✅ All data loaded successfully!
+2026-04-23 17:09:16,582 - ETL - INFO - 
+✅ All data loaded successfully!
+2026-04-23 17:09:16,582 - ETL - INFO - ============================================================
+
+2026-04-23 17:09:16,582 - ETL - INFO - ============================================================
+
+2026-04-23 17:09:16,582 - ETL - INFO - ============================================================
+
+2026-04-23 17:09:16,582 - ETL - INFO - ============================================================
+
+2026-04-23 17:09:16,582 - ETL - INFO - 
+============================================================
+2026-04-23 17:09:16,582 - ETL - INFO - 
+============================================================
+2026-04-23 17:09:16,582 - ETL - INFO - 
+============================================================
+2026-04-23 17:09:16,582 - ETL - INFO - 
+============================================================
+2026-04-23 17:09:16,582 - ETL - INFO - 🧹 STEP 2: CLEAN
+2026-04-23 17:09:16,582 - ETL - INFO - 🧹 STEP 2: CLEAN
+2026-04-23 17:09:16,582 - ETL - INFO - 🧹 STEP 2: CLEAN
+2026-04-23 17:09:16,582 - ETL - INFO - 🧹 STEP 2: CLEAN
+2026-04-23 17:09:16,582 - ETL - INFO - ============================================================
+2026-04-23 17:09:16,582 - ETL - INFO - ============================================================
+2026-04-23 17:09:16,582 - ETL - INFO - ============================================================
+2026-04-23 17:09:16,582 - ETL - INFO - ============================================================
+2026-04-23 17:09:16,582 - ETL - INFO - ✅ DataCleaner initialized
+2026-04-23 17:09:16,582 - ETL - INFO - ✅ DataCleaner initialized
+2026-04-23 17:09:16,582 - ETL - INFO - ✅ DataCleaner initialized
+2026-04-23 17:09:16,582 - ETL - INFO - ✅ DataCleaner initialized
+2026-04-23 17:09:16,582 - ETL - INFO - 
+============================================================
+2026-04-23 17:09:16,582 - ETL - INFO - 
+============================================================
+2026-04-23 17:09:16,582 - ETL - INFO - 
+============================================================
+2026-04-23 17:09:16,582 - ETL - INFO - 
+============================================================
+2026-04-23 17:09:16,582 - ETL - INFO - 🧹 CLEANING DIMENSION TABLES
+2026-04-23 17:09:16,582 - ETL - INFO - 🧹 CLEANING DIMENSION TABLES
+2026-04-23 17:09:16,582 - ETL - INFO - 🧹 CLEANING DIMENSION TABLES
+2026-04-23 17:09:16,582 - ETL - INFO - 🧹 CLEANING DIMENSION TABLES
+2026-04-23 17:09:16,582 - ETL - INFO - ============================================================
+2026-04-23 17:09:16,582 - ETL - INFO - ============================================================
+2026-04-23 17:09:16,582 - ETL - INFO - ============================================================
+2026-04-23 17:09:16,582 - ETL - INFO - ============================================================
+2026-04-23 17:09:16,582 - ETL - INFO - 
+📍 Cleaning location...
+2026-04-23 17:09:16,582 - ETL - INFO - 
+📍 Cleaning location...
+2026-04-23 17:09:16,582 - ETL - INFO - 
+📍 Cleaning location...
+2026-04-23 17:09:16,582 - ETL - INFO - 
+📍 Cleaning location...
+2026-04-23 17:09:16,582 - ETL - INFO - 
+📊 Checking missing values for location...
+2026-04-23 17:09:16,582 - ETL - INFO - 
+📊 Checking missing values for location...
+2026-04-23 17:09:16,582 - ETL - INFO - 
+📊 Checking missing values for location...
+2026-04-23 17:09:16,582 - ETL - INFO - 
+📊 Checking missing values for location...
+2026-04-23 17:09:16,602 - ETL - INFO -   ✅ No missing values found!
+2026-04-23 17:09:16,602 - ETL - INFO -   ✅ No missing values found!
+2026-04-23 17:09:16,602 - ETL - INFO -   ✅ No missing values found!
+2026-04-23 17:09:16,602 - ETL - INFO -   ✅ No missing values found!
+2026-04-23 17:09:16,602 - ETL - INFO - 
+🔄 Checking duplicates for location...
+2026-04-23 17:09:16,602 - ETL - INFO - 
+🔄 Checking duplicates for location...
+2026-04-23 17:09:16,602 - ETL - INFO - 
+🔄 Checking duplicates for location...
+2026-04-23 17:09:16,602 - ETL - INFO - 
+🔄 Checking duplicates for location...
+2026-04-23 17:09:16,606 - ETL - INFO -   ✅ No duplicates found!
+2026-04-23 17:09:16,606 - ETL - INFO -   ✅ No duplicates found!
+2026-04-23 17:09:16,606 - ETL - INFO -   ✅ No duplicates found!
+2026-04-23 17:09:16,606 - ETL - INFO -   ✅ No duplicates found!
+2026-04-23 17:09:16,606 - ETL - INFO -   ✅ location cleaned | Final records: 417
+2026-04-23 17:09:16,606 - ETL - INFO -   ✅ location cleaned | Final records: 417
+2026-04-23 17:09:16,606 - ETL - INFO -   ✅ location cleaned | Final records: 417
+2026-04-23 17:09:16,606 - ETL - INFO -   ✅ location cleaned | Final records: 417
+2026-04-23 17:09:16,606 - ETL - INFO - 
+📍 Cleaning property_type...
+2026-04-23 17:09:16,606 - ETL - INFO - 
+📍 Cleaning property_type...
+2026-04-23 17:09:16,606 - ETL - INFO - 
+📍 Cleaning property_type...
+2026-04-23 17:09:16,606 - ETL - INFO - 
+📍 Cleaning property_type...
+2026-04-23 17:09:16,606 - ETL - INFO - 
+📊 Checking missing values for property_type...
+2026-04-23 17:09:16,606 - ETL - INFO - 
+📊 Checking missing values for property_type...
+2026-04-23 17:09:16,606 - ETL - INFO - 
+📊 Checking missing values for property_type...
+2026-04-23 17:09:16,606 - ETL - INFO - 
+📊 Checking missing values for property_type...
+2026-04-23 17:09:16,610 - ETL - INFO -   ✅ No missing values found!
+2026-04-23 17:09:16,610 - ETL - INFO -   ✅ No missing values found!
+2026-04-23 17:09:16,610 - ETL - INFO -   ✅ No missing values found!
+2026-04-23 17:09:16,610 - ETL - INFO -   ✅ No missing values found!
+2026-04-23 17:09:16,611 - ETL - INFO - 
+🔄 Checking duplicates for property_type...
+2026-04-23 17:09:16,611 - ETL - INFO - 
+🔄 Checking duplicates for property_type...
+2026-04-23 17:09:16,611 - ETL - INFO - 
+🔄 Checking duplicates for property_type...
+2026-04-23 17:09:16,611 - ETL - INFO - 
+🔄 Checking duplicates for property_type...
+2026-04-23 17:09:16,612 - ETL - INFO -   ✅ No duplicates found!
+2026-04-23 17:09:16,612 - ETL - INFO -   ✅ No duplicates found!
+2026-04-23 17:09:16,612 - ETL - INFO -   ✅ No duplicates found!
+2026-04-23 17:09:16,612 - ETL - INFO -   ✅ No duplicates found!
+2026-04-23 17:09:16,612 - ETL - INFO -   ✅ property_type cleaned | Final records: 1
+2026-04-23 17:09:16,612 - ETL - INFO -   ✅ property_type cleaned | Final records: 1
+2026-04-23 17:09:16,612 - ETL - INFO -   ✅ property_type cleaned | Final records: 1
+2026-04-23 17:09:16,612 - ETL - INFO -   ✅ property_type cleaned | Final records: 1
+2026-04-23 17:09:16,612 - ETL - INFO - 
+📍 Cleaning time...
+2026-04-23 17:09:16,612 - ETL - INFO - 
+📍 Cleaning time...
+2026-04-23 17:09:16,612 - ETL - INFO - 
+📍 Cleaning time...
+2026-04-23 17:09:16,612 - ETL - INFO - 
+📍 Cleaning time...
+2026-04-23 17:09:16,613 - ETL - INFO - 
+📊 Checking missing values for time...
+2026-04-23 17:09:16,613 - ETL - INFO - 
+📊 Checking missing values for time...
+2026-04-23 17:09:16,613 - ETL - INFO - 
+📊 Checking missing values for time...
+2026-04-23 17:09:16,613 - ETL - INFO - 
+📊 Checking missing values for time...
+2026-04-23 17:09:16,616 - ETL - INFO -   ✅ No missing values found!
+2026-04-23 17:09:16,616 - ETL - INFO -   ✅ No missing values found!
+2026-04-23 17:09:16,616 - ETL - INFO -   ✅ No missing values found!
+2026-04-23 17:09:16,616 - ETL - INFO -   ✅ No missing values found!
+2026-04-23 17:09:16,616 - ETL - INFO - 
+🔄 Checking duplicates for time...
+2026-04-23 17:09:16,616 - ETL - INFO - 
+🔄 Checking duplicates for time...
+2026-04-23 17:09:16,616 - ETL - INFO - 
+🔄 Checking duplicates for time...
+2026-04-23 17:09:16,616 - ETL - INFO - 
+🔄 Checking duplicates for time...
+2026-04-23 17:09:16,617 - ETL - INFO -   ✅ No duplicates found!
+2026-04-23 17:09:16,617 - ETL - INFO -   ✅ No duplicates found!
+2026-04-23 17:09:16,617 - ETL - INFO -   ✅ No duplicates found!
+2026-04-23 17:09:16,617 - ETL - INFO -   ✅ No duplicates found!
+2026-04-23 17:09:16,619 - ETL - INFO -   ✅ time cleaned | Final records: 1,096
+2026-04-23 17:09:16,619 - ETL - INFO -   ✅ time cleaned | Final records: 1,096
+2026-04-23 17:09:16,619 - ETL - INFO -   ✅ time cleaned | Final records: 1,096
+2026-04-23 17:09:16,619 - ETL - INFO -   ✅ time cleaned | Final records: 1,096
+2026-04-23 17:09:16,619 - ETL - INFO - 
+📍 Cleaning transaction_type...
+2026-04-23 17:09:16,619 - ETL - INFO - 
+📍 Cleaning transaction_type...
+2026-04-23 17:09:16,619 - ETL - INFO - 
+📍 Cleaning transaction_type...
+2026-04-23 17:09:16,619 - ETL - INFO - 
+📍 Cleaning transaction_type...
+2026-04-23 17:09:16,619 - ETL - INFO - 
+📊 Checking missing values for transaction_type...
+2026-04-23 17:09:16,619 - ETL - INFO - 
+📊 Checking missing values for transaction_type...
+2026-04-23 17:09:16,619 - ETL - INFO - 
+📊 Checking missing values for transaction_type...
+2026-04-23 17:09:16,619 - ETL - INFO - 
+📊 Checking missing values for transaction_type...
+2026-04-23 17:09:16,620 - ETL - INFO -   ✅ No missing values found!
+2026-04-23 17:09:16,620 - ETL - INFO -   ✅ No missing values found!
+2026-04-23 17:09:16,620 - ETL - INFO -   ✅ No missing values found!
+2026-04-23 17:09:16,620 - ETL - INFO -   ✅ No missing values found!
+2026-04-23 17:09:16,621 - ETL - INFO - 
+🔄 Checking duplicates for transaction_type...
+2026-04-23 17:09:16,621 - ETL - INFO - 
+🔄 Checking duplicates for transaction_type...
+2026-04-23 17:09:16,621 - ETL - INFO - 
+🔄 Checking duplicates for transaction_type...
+2026-04-23 17:09:16,621 - ETL - INFO - 
+🔄 Checking duplicates for transaction_type...
+2026-04-23 17:09:16,621 - ETL - INFO -   ✅ No duplicates found!
+2026-04-23 17:09:16,621 - ETL - INFO -   ✅ No duplicates found!
+2026-04-23 17:09:16,621 - ETL - INFO -   ✅ No duplicates found!
+2026-04-23 17:09:16,621 - ETL - INFO -   ✅ No duplicates found!
+2026-04-23 17:09:16,621 - ETL - INFO -   ✅ transaction_type cleaned | Final records: 2
+2026-04-23 17:09:16,621 - ETL - INFO -   ✅ transaction_type cleaned | Final records: 2
+2026-04-23 17:09:16,621 - ETL - INFO -   ✅ transaction_type cleaned | Final records: 2
+2026-04-23 17:09:16,621 - ETL - INFO -   ✅ transaction_type cleaned | Final records: 2
+2026-04-23 17:09:16,621 - ETL - INFO - ============================================================
+2026-04-23 17:09:16,621 - ETL - INFO - ============================================================
+2026-04-23 17:09:16,621 - ETL - INFO - ============================================================
+2026-04-23 17:09:16,621 - ETL - INFO - ============================================================
+2026-04-23 17:09:16,623 - ETL - INFO - 
+============================================================
+2026-04-23 17:09:16,623 - ETL - INFO - 
+============================================================
+2026-04-23 17:09:16,623 - ETL - INFO - 
+============================================================
+2026-04-23 17:09:16,623 - ETL - INFO - 
+============================================================
+2026-04-23 17:09:16,624 - ETL - INFO - 🧹 CLEANING FACT TABLE
+2026-04-23 17:09:16,624 - ETL - INFO - 🧹 CLEANING FACT TABLE
+2026-04-23 17:09:16,624 - ETL - INFO - 🧹 CLEANING FACT TABLE
+2026-04-23 17:09:16,624 - ETL - INFO - 🧹 CLEANING FACT TABLE
+2026-04-23 17:09:16,624 - ETL - INFO - ============================================================
+2026-04-23 17:09:16,624 - ETL - INFO - ============================================================
+2026-04-23 17:09:16,624 - ETL - INFO - ============================================================
+2026-04-23 17:09:16,624 - ETL - INFO - ============================================================
+2026-04-23 17:09:16,624 - ETL - INFO - 
+📊 Checking missing values for Fact Table...
+2026-04-23 17:09:16,624 - ETL - INFO - 
+📊 Checking missing values for Fact Table...
+2026-04-23 17:09:16,624 - ETL - INFO - 
+📊 Checking missing values for Fact Table...
+2026-04-23 17:09:16,624 - ETL - INFO - 
+📊 Checking missing values for Fact Table...
+2026-04-23 17:09:16,625 - ETL - INFO -   ✅ No missing values found!
+2026-04-23 17:09:16,625 - ETL - INFO -   ✅ No missing values found!
+2026-04-23 17:09:16,625 - ETL - INFO -   ✅ No missing values found!
+2026-04-23 17:09:16,625 - ETL - INFO -   ✅ No missing values found!
+2026-04-23 17:09:16,625 - ETL - INFO - 
+🔄 Checking duplicates for Fact Table...
+2026-04-23 17:09:16,625 - ETL - INFO - 
+🔄 Checking duplicates for Fact Table...
+2026-04-23 17:09:16,625 - ETL - INFO - 
+🔄 Checking duplicates for Fact Table...
+2026-04-23 17:09:16,625 - ETL - INFO - 
+🔄 Checking duplicates for Fact Table...
+2026-04-23 17:09:16,641 - ETL - INFO -   ✅ No duplicates found!
+2026-04-23 17:09:16,641 - ETL - INFO -   ✅ No duplicates found!
+2026-04-23 17:09:16,641 - ETL - INFO -   ✅ No duplicates found!
+2026-04-23 17:09:16,641 - ETL - INFO -   ✅ No duplicates found!
+2026-04-23 17:09:16,641 - ETL - INFO - 
+🔍 Detecting outliers for Fact Table...
+2026-04-23 17:09:16,641 - ETL - INFO - 
+🔍 Detecting outliers for Fact Table...
+2026-04-23 17:09:16,641 - ETL - INFO - 
+🔍 Detecting outliers for Fact Table...
+2026-04-23 17:09:16,641 - ETL - INFO - 
+🔍 Detecting outliers for Fact Table...
+2026-04-23 17:09:16,641 - ETL - INFO -   ⚠️  area: 6247 outliers (12.41%)
+2026-04-23 17:09:16,641 - ETL - INFO -   ⚠️  area: 6247 outliers (12.41%)
+2026-04-23 17:09:16,641 - ETL - INFO -   ⚠️  area: 6247 outliers (12.41%)
+2026-04-23 17:09:16,641 - ETL - INFO -   ⚠️  area: 6247 outliers (12.41%)
+2026-04-23 17:09:16,648 - ETL - INFO -   ⚠️  bathrooms_num: 2908 outliers (5.78%)
+2026-04-23 17:09:16,648 - ETL - INFO -   ⚠️  bathrooms_num: 2908 outliers (5.78%)
+2026-04-23 17:09:16,648 - ETL - INFO -   ⚠️  bathrooms_num: 2908 outliers (5.78%)
+2026-04-23 17:09:16,648 - ETL - INFO -   ⚠️  bathrooms_num: 2908 outliers (5.78%)
+2026-04-23 17:09:16,648 - ETL - INFO - 
+✅ Fact table cleaned | Final records: 50,343
+2026-04-23 17:09:16,648 - ETL - INFO - 
+✅ Fact table cleaned | Final records: 50,343
+2026-04-23 17:09:16,648 - ETL - INFO - 
+✅ Fact table cleaned | Final records: 50,343
+2026-04-23 17:09:16,648 - ETL - INFO - 
+✅ Fact table cleaned | Final records: 50,343
+2026-04-23 17:09:16,648 - ETL - INFO - ============================================================
+2026-04-23 17:09:16,648 - ETL - INFO - ============================================================
+2026-04-23 17:09:16,648 - ETL - INFO - ============================================================
+2026-04-23 17:09:16,648 - ETL - INFO - ============================================================
+2026-04-23 17:09:16,649 - ETL - INFO - 
+============================================================
+2026-04-23 17:09:16,649 - ETL - INFO - 
+============================================================
+2026-04-23 17:09:16,649 - ETL - INFO - 
+============================================================
+2026-04-23 17:09:16,649 - ETL - INFO - 
+============================================================
+2026-04-23 17:09:16,649 - ETL - INFO - 📈 DATA QUALITY REPORT
+2026-04-23 17:09:16,649 - ETL - INFO - 📈 DATA QUALITY REPORT
+2026-04-23 17:09:16,649 - ETL - INFO - 📈 DATA QUALITY REPORT
+2026-04-23 17:09:16,649 - ETL - INFO - 📈 DATA QUALITY REPORT
+2026-04-23 17:09:16,650 - ETL - INFO - ============================================================
+2026-04-23 17:09:16,650 - ETL - INFO - ============================================================
+2026-04-23 17:09:16,650 - ETL - INFO - ============================================================
+2026-04-23 17:09:16,650 - ETL - INFO - ============================================================
+2026-04-23 17:09:16,650 - ETL - INFO - 
+📊 Dimension Tables:
+2026-04-23 17:09:16,650 - ETL - INFO - 
+📊 Dimension Tables:
+2026-04-23 17:09:16,650 - ETL - INFO - 
+📊 Dimension Tables:
+2026-04-23 17:09:16,650 - ETL - INFO - 
+📊 Dimension Tables:
+2026-04-23 17:09:16,650 - ETL - INFO -   - location: 417 records | 3 columns
+2026-04-23 17:09:16,650 - ETL - INFO -   - location: 417 records | 3 columns
+2026-04-23 17:09:16,650 - ETL - INFO -   - location: 417 records | 3 columns
+2026-04-23 17:09:16,650 - ETL - INFO -   - location: 417 records | 3 columns
+2026-04-23 17:09:16,652 - ETL - INFO -   - property_type: 1 records | 2 columns
+2026-04-23 17:09:16,652 - ETL - INFO -   - property_type: 1 records | 2 columns
+2026-04-23 17:09:16,652 - ETL - INFO -   - property_type: 1 records | 2 columns
+2026-04-23 17:09:16,652 - ETL - INFO -   - property_type: 1 records | 2 columns
+2026-04-23 17:09:16,652 - ETL - INFO -   - time: 1,096 records | 7 columns
+2026-04-23 17:09:16,652 - ETL - INFO -   - time: 1,096 records | 7 columns
+2026-04-23 17:09:16,652 - ETL - INFO -   - time: 1,096 records | 7 columns
+2026-04-23 17:09:16,652 - ETL - INFO -   - time: 1,096 records | 7 columns
+2026-04-23 17:09:16,653 - ETL - INFO -   - transaction_type: 2 records | 2 columns
+2026-04-23 17:09:16,653 - ETL - INFO -   - transaction_type: 2 records | 2 columns
+2026-04-23 17:09:16,653 - ETL - INFO -   - transaction_type: 2 records | 2 columns
+2026-04-23 17:09:16,653 - ETL - INFO -   - transaction_type: 2 records | 2 columns
+2026-04-23 17:09:16,653 - ETL - INFO - 
+📊 Fact Table:
+2026-04-23 17:09:16,653 - ETL - INFO - 
+📊 Fact Table:
+2026-04-23 17:09:16,653 - ETL - INFO - 
+📊 Fact Table:
+2026-04-23 17:09:16,653 - ETL - INFO - 
+📊 Fact Table:
+2026-04-23 17:09:16,653 - ETL - INFO -   - Records: 50,343
+2026-04-23 17:09:16,653 - ETL - INFO -   - Records: 50,343
+2026-04-23 17:09:16,653 - ETL - INFO -   - Records: 50,343
+2026-04-23 17:09:16,653 - ETL - INFO -   - Records: 50,343
+2026-04-23 17:09:16,654 - ETL - INFO -   - Columns: 10
+2026-04-23 17:09:16,654 - ETL - INFO -   - Columns: 10
+2026-04-23 17:09:16,654 - ETL - INFO -   - Columns: 10
+2026-04-23 17:09:16,654 - ETL - INFO -   - Columns: 10
+2026-04-23 17:09:16,654 - ETL - INFO -   - Memory usage: 3.84 MB
+2026-04-23 17:09:16,654 - ETL - INFO -   - Memory usage: 3.84 MB
+2026-04-23 17:09:16,654 - ETL - INFO -   - Memory usage: 3.84 MB
+2026-04-23 17:09:16,654 - ETL - INFO -   - Memory usage: 3.84 MB
+2026-04-23 17:09:16,654 - ETL - INFO - ============================================================
+2026-04-23 17:09:16,654 - ETL - INFO - ============================================================
+2026-04-23 17:09:16,654 - ETL - INFO - ============================================================
+2026-04-23 17:09:16,654 - ETL - INFO - ============================================================
+2026-04-23 17:09:16,656 - ETL - INFO - 
+============================================================
+2026-04-23 17:09:16,656 - ETL - INFO - 
+============================================================
+2026-04-23 17:09:16,656 - ETL - INFO - 
+============================================================
+2026-04-23 17:09:16,656 - ETL - INFO - 
+============================================================
+2026-04-23 17:09:16,656 - ETL - INFO - 🔄 STEP 3: TRANSFORM
+2026-04-23 17:09:16,656 - ETL - INFO - 🔄 STEP 3: TRANSFORM
+2026-04-23 17:09:16,656 - ETL - INFO - 🔄 STEP 3: TRANSFORM
+2026-04-23 17:09:16,656 - ETL - INFO - 🔄 STEP 3: TRANSFORM
+2026-04-23 17:09:16,656 - ETL - INFO - ============================================================
+2026-04-23 17:09:16,656 - ETL - INFO - ============================================================
+2026-04-23 17:09:16,656 - ETL - INFO - ============================================================
+2026-04-23 17:09:16,656 - ETL - INFO - ============================================================
+2026-04-23 17:09:16,656 - ETL - INFO - ✅ DataTransformer initialized
+2026-04-23 17:09:16,656 - ETL - INFO - ✅ DataTransformer initialized
+2026-04-23 17:09:16,656 - ETL - INFO - ✅ DataTransformer initialized
+2026-04-23 17:09:16,656 - ETL - INFO - ✅ DataTransformer initialized
+2026-04-23 17:09:16,656 - ETL - INFO - 
+============================================================
+2026-04-23 17:09:16,656 - ETL - INFO - 
+============================================================
+2026-04-23 17:09:16,656 - ETL - INFO - 
+============================================================
+2026-04-23 17:09:16,656 - ETL - INFO - 
+============================================================
+2026-04-23 17:09:16,656 - ETL - INFO - 🔄 TRANSFORMING DATA
+2026-04-23 17:09:16,656 - ETL - INFO - 🔄 TRANSFORMING DATA
+2026-04-23 17:09:16,656 - ETL - INFO - 🔄 TRANSFORMING DATA
+2026-04-23 17:09:16,656 - ETL - INFO - 🔄 TRANSFORMING DATA
+2026-04-23 17:09:16,656 - ETL - INFO - ============================================================
+2026-04-23 17:09:16,656 - ETL - INFO - ============================================================
+2026-04-23 17:09:16,656 - ETL - INFO - ============================================================
+2026-04-23 17:09:16,656 - ETL - INFO - ============================================================
+2026-04-23 17:09:16,656 - ETL - INFO - 
+📍 Transforming location table...
+2026-04-23 17:09:16,656 - ETL - INFO - 
+📍 Transforming location table...
+2026-04-23 17:09:16,656 - ETL - INFO - 
+📍 Transforming location table...
+2026-04-23 17:09:16,656 - ETL - INFO - 
+📍 Transforming location table...
+2026-04-23 17:09:16,661 - ETL - INFO -   ✅ Location table transformed
+2026-04-23 17:09:16,661 - ETL - INFO -   ✅ Location table transformed
+2026-04-23 17:09:16,661 - ETL - INFO -   ✅ Location table transformed
+2026-04-23 17:09:16,661 - ETL - INFO -   ✅ Location table transformed
+2026-04-23 17:09:16,661 - ETL - INFO - 
+⏰ Transforming time table...
+2026-04-23 17:09:16,661 - ETL - INFO - 
+⏰ Transforming time table...
+2026-04-23 17:09:16,661 - ETL - INFO - 
+⏰ Transforming time table...
+2026-04-23 17:09:16,661 - ETL - INFO - 
+⏰ Transforming time table...
+2026-04-23 17:09:16,665 - ETL - INFO -   ✅ Time table transformed
+2026-04-23 17:09:16,665 - ETL - INFO -   ✅ Time table transformed
+2026-04-23 17:09:16,665 - ETL - INFO -   ✅ Time table transformed
+2026-04-23 17:09:16,665 - ETL - INFO -   ✅ Time table transformed
+2026-04-23 17:09:16,665 - ETL - INFO - 
+🏠 Transforming property_type table...
+2026-04-23 17:09:16,665 - ETL - INFO - 
+🏠 Transforming property_type table...
+2026-04-23 17:09:16,665 - ETL - INFO - 
+🏠 Transforming property_type table...
+2026-04-23 17:09:16,665 - ETL - INFO - 
+🏠 Transforming property_type table...
+2026-04-23 17:09:16,665 - ETL - INFO -   ✅ Property type table transformed
+2026-04-23 17:09:16,665 - ETL - INFO -   ✅ Property type table transformed
+2026-04-23 17:09:16,665 - ETL - INFO -   ✅ Property type table transformed
+2026-04-23 17:09:16,665 - ETL - INFO -   ✅ Property type table transformed
+2026-04-23 17:09:16,665 - ETL - INFO - 
+💼 Transforming transaction_type table...
+2026-04-23 17:09:16,665 - ETL - INFO - 
+💼 Transforming transaction_type table...
+2026-04-23 17:09:16,665 - ETL - INFO - 
+💼 Transforming transaction_type table...
+2026-04-23 17:09:16,665 - ETL - INFO - 
+💼 Transforming transaction_type table...
+2026-04-23 17:09:16,665 - ETL - INFO -   ✅ Transaction type table transformed
+2026-04-23 17:09:16,665 - ETL - INFO -   ✅ Transaction type table transformed
+2026-04-23 17:09:16,665 - ETL - INFO -   ✅ Transaction type table transformed
+2026-04-23 17:09:16,665 - ETL - INFO -   ✅ Transaction type table transformed
+2026-04-23 17:09:16,665 - ETL - INFO - 
+📊 Transforming fact table...
+2026-04-23 17:09:16,665 - ETL - INFO - 
+📊 Transforming fact table...
+2026-04-23 17:09:16,665 - ETL - INFO - 
+📊 Transforming fact table...
+2026-04-23 17:09:16,665 - ETL - INFO - 
+📊 Transforming fact table...
+2026-04-23 17:09:16,691 - ETL - INFO -   ✅ Fact table transformed | Final records: 50,343
+2026-04-23 17:09:16,691 - ETL - INFO -   ✅ Fact table transformed | Final records: 50,343
+2026-04-23 17:09:16,691 - ETL - INFO -   ✅ Fact table transformed | Final records: 50,343
+2026-04-23 17:09:16,691 - ETL - INFO -   ✅ Fact table transformed | Final records: 50,343
+2026-04-23 17:09:16,691 - ETL - INFO - 
+============================================================
+2026-04-23 17:09:16,691 - ETL - INFO - 
+============================================================
+2026-04-23 17:09:16,691 - ETL - INFO - 
+============================================================
+2026-04-23 17:09:16,691 - ETL - INFO - 
+============================================================
+2026-04-23 17:09:16,691 - ETL - INFO - ✅ Data transformation completed!
+2026-04-23 17:09:16,691 - ETL - INFO - ✅ Data transformation completed!
+2026-04-23 17:09:16,691 - ETL - INFO - ✅ Data transformation completed!
+2026-04-23 17:09:16,691 - ETL - INFO - ✅ Data transformation completed!
+2026-04-23 17:09:16,691 - ETL - INFO - ============================================================
+2026-04-23 17:09:16,691 - ETL - INFO - ============================================================
+2026-04-23 17:09:16,691 - ETL - INFO - ============================================================
+2026-04-23 17:09:16,691 - ETL - INFO - ============================================================
+2026-04-23 17:09:16,691 - ETL - INFO - 
+============================================================
+2026-04-23 17:09:16,691 - ETL - INFO - 
+============================================================
+2026-04-23 17:09:16,691 - ETL - INFO - 
+============================================================
+2026-04-23 17:09:16,691 - ETL - INFO - 
+============================================================
+2026-04-23 17:09:16,691 - ETL - INFO - 💾 STEP 4: SAVE
+2026-04-23 17:09:16,691 - ETL - INFO - 💾 STEP 4: SAVE
+2026-04-23 17:09:16,691 - ETL - INFO - 💾 STEP 4: SAVE
+2026-04-23 17:09:16,691 - ETL - INFO - 💾 STEP 4: SAVE
+2026-04-23 17:09:16,691 - ETL - INFO - ============================================================
+2026-04-23 17:09:16,691 - ETL - INFO - ============================================================
+2026-04-23 17:09:16,691 - ETL - INFO - ============================================================
+2026-04-23 17:09:16,691 - ETL - INFO - ============================================================
+2026-04-23 17:09:16,691 - ETL - INFO - 
+📁 Saving dimension tables...
+2026-04-23 17:09:16,691 - ETL - INFO - 
+📁 Saving dimension tables...
+2026-04-23 17:09:16,691 - ETL - INFO - 
+📁 Saving dimension tables...
+2026-04-23 17:09:16,691 - ETL - INFO - 
+📁 Saving dimension tables...
+2026-04-23 17:09:16,698 - ETL - INFO -   ✅ Saved: data/processed/dim_location.csv (417 records)
+2026-04-23 17:09:16,698 - ETL - INFO -   ✅ Saved: data/processed/dim_location.csv (417 records)
+2026-04-23 17:09:16,698 - ETL - INFO -   ✅ Saved: data/processed/dim_location.csv (417 records)
+2026-04-23 17:09:16,698 - ETL - INFO -   ✅ Saved: data/processed/dim_location.csv (417 records)
+2026-04-23 17:09:16,698 - ETL - INFO -   ✅ Saved: data/processed/dim_property_type.csv (1 records)
+2026-04-23 17:09:16,698 - ETL - INFO -   ✅ Saved: data/processed/dim_property_type.csv (1 records)
+2026-04-23 17:09:16,698 - ETL - INFO -   ✅ Saved: data/processed/dim_property_type.csv (1 records)
+2026-04-23 17:09:16,698 - ETL - INFO -   ✅ Saved: data/processed/dim_property_type.csv (1 records)
+2026-04-23 17:09:16,710 - ETL - INFO -   ✅ Saved: data/processed/dim_time.csv (1096 records)
+2026-04-23 17:09:16,710 - ETL - INFO -   ✅ Saved: data/processed/dim_time.csv (1096 records)
+2026-04-23 17:09:16,710 - ETL - INFO -   ✅ Saved: data/processed/dim_time.csv (1096 records)
+2026-04-23 17:09:16,710 - ETL - INFO -   ✅ Saved: data/processed/dim_time.csv (1096 records)
+2026-04-23 17:09:16,712 - ETL - INFO -   ✅ Saved: data/processed/dim_transaction_type.csv (2 records)
+2026-04-23 17:09:16,712 - ETL - INFO -   ✅ Saved: data/processed/dim_transaction_type.csv (2 records)
+2026-04-23 17:09:16,712 - ETL - INFO -   ✅ Saved: data/processed/dim_transaction_type.csv (2 records)
+2026-04-23 17:09:16,712 - ETL - INFO -   ✅ Saved: data/processed/dim_transaction_type.csv (2 records)
+2026-04-23 17:09:16,877 - ETL - INFO - 
+  ✅ Saved: data/processed/fact_properties.csv (50343 records)
+2026-04-23 17:09:16,877 - ETL - INFO - 
+  ✅ Saved: data/processed/fact_properties.csv (50343 records)
+2026-04-23 17:09:16,877 - ETL - INFO - 
+  ✅ Saved: data/processed/fact_properties.csv (50343 records)
+2026-04-23 17:09:16,877 - ETL - INFO - 
+  ✅ Saved: data/processed/fact_properties.csv (50343 records)
+2026-04-23 17:09:16,877 - ETL - INFO - ============================================================
+2026-04-23 17:09:16,877 - ETL - INFO - ============================================================
+2026-04-23 17:09:16,877 - ETL - INFO - ============================================================
+2026-04-23 17:09:16,877 - ETL - INFO - ============================================================
+2026-04-23 17:09:16,877 - ETL - INFO - 
+============================================================
+2026-04-23 17:09:16,877 - ETL - INFO - 
+============================================================
+2026-04-23 17:09:16,877 - ETL - INFO - 
+============================================================
+2026-04-23 17:09:16,877 - ETL - INFO - 
+============================================================
+2026-04-23 17:09:16,877 - ETL - INFO - ✅ ETL PIPELINE COMPLETED SUCCESSFULLY!
+2026-04-23 17:09:16,877 - ETL - INFO - ✅ ETL PIPELINE COMPLETED SUCCESSFULLY!
+2026-04-23 17:09:16,877 - ETL - INFO - ✅ ETL PIPELINE COMPLETED SUCCESSFULLY!
+2026-04-23 17:09:16,877 - ETL - INFO - ✅ ETL PIPELINE COMPLETED SUCCESSFULLY!
+2026-04-23 17:09:16,877 - ETL - INFO - ============================================================
+
+2026-04-23 17:09:16,877 - ETL - INFO - ============================================================
+
+2026-04-23 17:09:16,877 - ETL - INFO - ============================================================
+
+2026-04-23 17:09:16,877 - ETL - INFO - ============================================================
+
+2026-04-23 17:09:16,877 - ETL - INFO - 
+📊 FINAL SUMMARY:
+2026-04-23 17:09:16,877 - ETL - INFO - 
+📊 FINAL SUMMARY:
+2026-04-23 17:09:16,877 - ETL - INFO - 
+📊 FINAL SUMMARY:
+2026-04-23 17:09:16,877 - ETL - INFO - 
+📊 FINAL SUMMARY:
+2026-04-23 17:09:16,877 - ETL - INFO - ============================================================
+2026-04-23 17:09:16,877 - ETL - INFO - ============================================================
+2026-04-23 17:09:16,877 - ETL - INFO - ============================================================
+2026-04-23 17:09:16,877 - ETL - INFO - ============================================================
+2026-04-23 17:09:16,877 - ETL - INFO -   - location: 417 records
+2026-04-23 17:09:16,877 - ETL - INFO -   - location: 417 records
+2026-04-23 17:09:16,877 - ETL - INFO -   - location: 417 records
+2026-04-23 17:09:16,877 - ETL - INFO -   - location: 417 records
+2026-04-23 17:09:16,877 - ETL - INFO -   - property_type: 1 records
+2026-04-23 17:09:16,877 - ETL - INFO -   - property_type: 1 records
+2026-04-23 17:09:16,877 - ETL - INFO -   - property_type: 1 records
+2026-04-23 17:09:16,877 - ETL - INFO -   - property_type: 1 records
+2026-04-23 17:09:16,877 - ETL - INFO -   - time: 1096 records
+2026-04-23 17:09:16,877 - ETL - INFO -   - time: 1096 records
+2026-04-23 17:09:16,877 - ETL - INFO -   - time: 1096 records
+2026-04-23 17:09:16,877 - ETL - INFO -   - time: 1096 records
+2026-04-23 17:09:16,877 - ETL - INFO -   - transaction_type: 2 records
+2026-04-23 17:09:16,877 - ETL - INFO -   - transaction_type: 2 records
+2026-04-23 17:09:16,877 - ETL - INFO -   - transaction_type: 2 records
+2026-04-23 17:09:16,877 - ETL - INFO -   - transaction_type: 2 records
+2026-04-23 17:09:16,877 - ETL - INFO -   - fact: 50343 records
+2026-04-23 17:09:16,877 - ETL - INFO -   - fact: 50343 records
+2026-04-23 17:09:16,877 - ETL - INFO -   - fact: 50343 records
+2026-04-23 17:09:16,877 - ETL - INFO -   - fact: 50343 records
+2026-04-23 17:09:16,885 - ETL - INFO - ============================================================
+2026-04-23 17:09:16,885 - ETL - INFO - ============================================================
+2026-04-23 17:09:16,885 - ETL - INFO - ============================================================
+2026-04-23 17:09:16,885 - ETL - INFO - ============================================================
+2026-04-23 17:12:44,629 - ETL - INFO - 
+🔗 Connecting to database: datn_real_estate
+2026-04-23 17:12:44,939 - ETL - INFO - ✅ Database connection initialized
+2026-04-23 17:12:44,939 - ETL - INFO - 
+============================================================
+2026-04-23 17:12:44,939 - ETL - INFO - 🗄️  CREATING TABLES
+2026-04-23 17:12:44,939 - ETL - INFO - ============================================================
+2026-04-23 17:12:45,048 - ETL - INFO -   ✅ Table created
+2026-04-23 17:12:45,051 - ETL - INFO -   ✅ Table created
+2026-04-23 17:12:45,052 - ETL - INFO -   ✅ Table created
+2026-04-23 17:12:45,053 - ETL - INFO -   ✅ Table created
+2026-04-23 17:12:45,062 - ETL - INFO -   ✅ Table created
+2026-04-23 17:12:45,063 - ETL - INFO - ============================================================
+2026-04-23 17:12:45,063 - ETL - INFO - ✅ All tables created successfully!
+2026-04-23 17:12:45,063 - ETL - INFO - ============================================================
+2026-04-23 17:12:45,064 - ETL - INFO - 
+📂 Loading processed data...
+2026-04-23 17:12:45,175 - ETL - INFO - 
+============================================================
+2026-04-23 17:12:45,175 - ETL - INFO - 📥 LOADING DATA INTO DATABASE
+2026-04-23 17:12:45,175 - ETL - INFO - ============================================================
+2026-04-23 17:12:45,175 - ETL - INFO - 
+📍 Loading dimension tables...
+2026-04-23 17:12:45,259 - ETL - ERROR - ❌ Error loading data: (psycopg2.errors.DependentObjectsStillExist) cannot drop table dim_location because other objects depend on it
+DETAIL:  constraint fact_properties_location_id_fkey on table fact_properties depends on table dim_location
+HINT:  Use DROP ... CASCADE to drop the dependent objects too.
+
+[SQL: 
+DROP TABLE dim_location]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2026-04-23 17:19:08,174 - ETL - INFO - 
+🔗 Connecting to database: datn_real_estate
+2026-04-23 17:19:08,214 - ETL - INFO - ✅ Database connection initialized
+2026-04-23 17:19:08,214 - ETL - INFO - 
+============================================================
+2026-04-23 17:19:08,214 - ETL - INFO - 🗄️  CREATING TABLES
+2026-04-23 17:19:08,214 - ETL - INFO - ============================================================
+2026-04-23 17:19:08,285 - ETL - INFO -   ✅ Table created
+2026-04-23 17:19:08,301 - ETL - INFO -   ✅ Table created
+2026-04-23 17:19:08,301 - ETL - INFO -   ✅ Table created
+2026-04-23 17:19:08,301 - ETL - INFO -   ✅ Table created
+2026-04-23 17:19:08,312 - ETL - INFO -   ✅ Table created
+2026-04-23 17:19:08,313 - ETL - INFO - ============================================================
+2026-04-23 17:19:08,313 - ETL - INFO - ✅ All tables created successfully!
+2026-04-23 17:19:08,313 - ETL - INFO - ============================================================
+2026-04-23 17:19:08,313 - ETL - INFO - 
+📂 Loading processed data...
+2026-04-23 17:19:08,383 - ETL - INFO - 
+============================================================
+2026-04-23 17:19:08,383 - ETL - INFO - 📥 LOADING DATA INTO DATABASE
+2026-04-23 17:19:08,385 - ETL - INFO - ============================================================
+2026-04-23 17:19:08,385 - ETL - INFO - 
+📍 Loading dimension tables...
+2026-04-23 17:19:08,439 - ETL - ERROR - ❌ Error loading data: (psycopg2.errors.DependentObjectsStillExist) cannot drop table dim_location because other objects depend on it
+DETAIL:  constraint fact_properties_location_id_fkey on table fact_properties depends on table dim_location
+HINT:  Use DROP ... CASCADE to drop the dependent objects too.
+
+[SQL: 
+DROP TABLE dim_location]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2026-04-23 17:38:35,325 - ETL - INFO - 📍 Getting properties: skip=0, limit=10, city=Ho Chi Minh City
+2026-04-23 17:39:08,851 - ETL - INFO - 📍 Getting properties: skip=2, limit=10, city=Ho Chi Minh City
+2026-04-23 17:40:44,734 - ETL - INFO - 📍 Getting properties: skip=2, limit=10, city=hồ chí minh
+2026-04-23 17:42:39,453 - ETL - INFO - 📍 Getting properties: skip=0, limit=10, city=hồ chí minh
+2026-04-23 17:42:41,271 - ETL - INFO - 📍 Getting properties: skip=0, limit=10, city=hồ chí minh
+2026-04-23 17:43:25,251 - ETL - INFO - 📍 Getting properties: skip=0, limit=10, city=bất động sản
+2026-04-23 17:43:55,871 - ETL - INFO - 🎯 Getting recommendations for property 0
+2026-04-23 17:44:48,734 - ETL - INFO - 📊 Getting market statistics
+2026-04-23 17:47:22,748 - ETL - INFO - 🔮 Predicting price for: area=120.0 bedrooms=3 bathrooms_num=2 city='Ho Chi Minh City' property_type='Bất động sản'
+2026-04-23 17:48:21,220 - ETL - INFO - 🎯 Getting recommendations for property 1
+2026-04-23 17:50:39,588 - ETL - INFO - 📍 Getting properties: skip=0, limit=10, city=hồ chí minh
+2026-04-23 18:43:16,580 - ETL - INFO - 📍 Getting properties: skip=0, limit=10, city=hồ chí minh
+2026-04-23 18:47:43,970 - ETL - INFO - 📍 Getting properties: skip=0, limit=10, city=Hồ Chí Minh
+2026-04-23 18:48:10,194 - ETL - INFO - 📍 Getting properties: skip=0, limit=10, city=Hà Nội

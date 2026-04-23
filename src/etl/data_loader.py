@@ -51,7 +51,7 @@ class DataLoader:
         logger.info("=" * 60)
         
         try:
-            df = pd.read_csv(file_path, encoding='utf-8', nrows=nrows)
+            df = pd.read_csv(file_path, encoding='utf-8')
             logger.info(f"  ✅ Fact table loaded | Records: {len(df):,}")
             logger.info("=" * 60)
             return df
