@@ -2555,3 +2555,19 @@ DROP TABLE dim_location]
 2026-04-23 18:43:16,580 - ETL - INFO - 📍 Getting properties: skip=0, limit=10, city=hồ chí minh
 2026-04-23 18:47:43,970 - ETL - INFO - 📍 Getting properties: skip=0, limit=10, city=Hồ Chí Minh
 2026-04-23 18:48:10,194 - ETL - INFO - 📍 Getting properties: skip=0, limit=10, city=Hà Nội
+2026-04-23 18:53:22,602 - ETL - INFO - 📍 Getting properties: skip=0, limit=10, city=Hồ Chí Minh
+2026-04-23 18:53:22,663 - ETL - INFO - ✅ Found 10 properties
+2026-04-23 18:53:50,570 - ETL - INFO - 📍 Getting properties: skip=0, limit=10, city=Hà Nội
+2026-04-23 18:53:50,578 - ETL - INFO - ✅ Found 10 properties
+2026-04-23 18:54:19,528 - ETL - INFO - 📍 Getting properties: skip=0, limit=10, city=Nha Trang
+2026-04-23 18:54:19,530 - ETL - INFO - ✅ Found 0 properties
+2026-04-23 18:54:23,138 - ETL - INFO - 📍 Getting properties: skip=0, limit=10, city=Nha Trang
+2026-04-23 18:54:23,139 - ETL - INFO - ✅ Found 0 properties
+2026-04-23 18:54:41,009 - ETL - INFO - 📍 Getting properties: skip=0, limit=10, city=Kiên Giang
+2026-04-23 18:54:41,014 - ETL - INFO - ✅ Found 10 properties
+2026-04-23 18:55:04,502 - ETL - INFO - 📍 Getting properties: skip=0, limit=10, city=hồ chí minh
+2026-04-23 18:55:04,504 - ETL - INFO - ✅ Found 0 properties
+2026-04-23 18:55:11,066 - ETL - INFO - 📍 Getting properties: skip=0, limit=10, city=Hồ Chí Minh
+2026-04-23 18:55:11,073 - ETL - INFO - ✅ Found 10 properties
+2026-04-23 18:55:27,201 - ETL - INFO - 📍 Getting properties: skip=0, limit=50, city=Hồ Chí Minh
+2026-04-23 18:55:27,217 - ETL - INFO - ✅ Found 50 properties
