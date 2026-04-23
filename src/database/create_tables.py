@@ -16,7 +16,7 @@ class DatabaseManager:
     def __init__(self, db_url):
         """
         Initialize database manager
-        db_url: postgresql://username:password@localhost:5432/database_name
+        db_url: postgresql://username:123456@localhost:5432/database_name
         """
         self.engine = create_engine(db_url)
         logger.info(f"✅ Database connection initialized")
