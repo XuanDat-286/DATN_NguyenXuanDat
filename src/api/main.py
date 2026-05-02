@@ -4,6 +4,7 @@ from fastapi import FastAPI, Depends, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
 from sqlalchemy import create_engine, func
 from sqlalchemy.orm import sessionmaker, Session
+import pandas as pd
 import yaml
 import sys
 from typing import List
@@ -13,9 +14,7 @@ from src.api.schemas import (
     PropertyResponse, PricePredictionRequest, PricePredictionResponse,
     RecommendationRequest, RecommendationResponse, MarketStatistics, CityStatistics
 )
-
-# THÊM DÒNG NÀY ĐỂ FIX LỖI IMPORT:
-from src.api.models import Base, FactProperties, DimLocation
+from src.api.models import Base, FactProperties, DimLocation, DimPropertyType
 from src.utils.logger_config import setup_logger
 
 logger = setup_logger()
@@ -31,9 +30,19 @@ DATABASE_URL = f"postgresql://{db_config['username']}:{db_config['password']}@{d
 engine = create_engine(DATABASE_URL)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
-# ============ FASTAPI SETUP ============
-app = FastAPI(title="Real Estate API", version="1.0.0")
+# ============ LOAD ML MODEL (placeholder) ============
+# Sẽ load model thực tế ở tuần 7-8
+ml_model = None
+confidence_score = 0.85
 
+# ============ FASTAPI SETUP ============
+app = FastAPI(
+    title="Real Estate API",
+    description="API for real estate price prediction and recommendations",
+    version="1.0.0"
+)
+
+# ============ CORS CONFIGURATION ============
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -42,6 +51,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+# ============ DEPENDENCY ============
 def get_db():
     db = SessionLocal()
     try:
@@ -49,7 +59,31 @@ def get_db():
     finally:
         db.close()
 
-# ============ ENDPOINTS ============
+# ============ ROOT ENDPOINT ============
+@app.get("/")
+def root():
+    """Root endpoint"""
+    return {
+        "message": "Welcome to Real Estate API",
+        "version": "1.0.0",
+        "endpoints": {
+            "properties": "/api/properties",
+            "predict": "/api/predict",
+            "recommendations": "/api/recommendations",
+            "statistics": "/api/statistics"
+        }
+    }
+
+# ============ HEALTH CHECK ============
+@app.get("/health")
+def health_check():
+    """Health check endpoint"""
+    return {
+        "status": "OK",
+        "message": "API is running"
+    }
+
+# ============ PROPERTIES ENDPOINTS ============
 
 @app.get("/api/properties", response_model=List[PropertyResponse])
 def get_properties(
@@ -58,108 +92,235 @@ def get_properties(
     city: str = Query(None),
     db: Session = Depends(get_db)
 ):
+    """
+    Get list of properties with pagination and filtering
+    
+    Parameters:
+    - skip: số lượng bỏ qua (default: 0)
+    - limit: số lượng trả về (default: 10, max: 100)
+    - city: lọc theo thành phố (optional)
+    """
     logger.info(f"📍 Getting properties: skip={skip}, limit={limit}, city={city}")
     
-    # Phải Join với DimLocation để có dữ liệu city/district
-    query = db.query(FactProperties).join(DimLocation)
+    query = db.query(FactProperties)
     
     if city:
-        query = query.filter(DimLocation.city == city)
+        query = query.filter(FactProperties.city == city)
     
     properties = query.offset(skip).limit(limit).all()
-    
-    # Bước này cực kỳ quan trọng để không bị lỗi 500:
-    for p in properties:
-        # Lấy dữ liệu từ bảng DimLocation thông qua relationship
-        # Đảm bảo trong models.py bạn đã có: location = relationship("DimLocation")
-        p.city = p.location.city
-        p.district = p.location.district
-        p.title = f"Bất động sản tại {p.district}"
-        
-        # FastAPI sẽ tự động map p.price_million và p.bedrooms_num 
-        # vào PropertyResponse nếu tên ở Schema và Model khớp nhau.
     
     logger.info(f"✅ Found {len(properties)} properties")
     return properties
 
+@app.get("/api/properties/{property_id}", response_model=PropertyResponse)
+def get_property(property_id: int, db: Session = Depends(get_db)):
+    """Get property by ID"""
+    logger.info(f"📍 Getting property {property_id}")
+    
+    property_obj = db.query(FactProperties).filter(
+        FactProperties.property_id == property_id
+    ).first()
+    
+    if not property_obj:
+        logger.error(f"❌ Property {property_id} not found")
+        raise HTTPException(status_code=404, detail="Property not found")
+    
+    logger.info(f"✅ Found property {property_id}")
+    return property_obj
+
+# ============ PRICE PREDICTION ENDPOINT ============
+
 @app.post("/api/predict", response_model=PricePredictionResponse)
 def predict_price(request: PricePredictionRequest, db: Session = Depends(get_db)):
-    market_data = db.query(FactProperties).join(DimLocation).filter(
-        DimLocation.city == request.city,
+    """
+    Predict property price based on features
+    
+    Parameters:
+    - area: diện tích (m²)
+    - bedrooms: số phòng ngủ
+    - bathrooms_num: số phòng tắm
+    - city: thành phố
+    - property_type: loại bất động sản
+    """
+    logger.info(f"🔮 Predicting price for: {request}")
+    
+    # Lấy thông tin thị trường từ database
+    market_data = db.query(FactProperties).filter(
+        FactProperties.city == request.city,
         FactProperties.area > request.area * 0.8,
         FactProperties.area < request.area * 1.2
     ).all()
     
     if not market_data:
-        avg_price = 5.0
+        logger.warning(f"⚠️  No market data for {request.city}")
+        # Return default values
+        predicted_price = 5.0
+        market_average = 5.0
+        price_range_min = 4.0
+        price_range_max = 6.0
     else:
-        # Sử dụng price_million đã sửa khớp với model của bạn
-        prices = [p.price_million for p in market_data]
-        avg_price = sum(prices) / len(prices)
+        # Calculate average price
+        prices = [p.price_milli for p in market_data]
+        market_average = sum(prices) / len(prices)
         
+        # Simple prediction: multiply area by average price per m²
+        avg_price_per_m2 = market_average * 1000000 / request.area
+        predicted_price = (request.area * avg_price_per_m2) / 1000000
+        
+        price_range_min = predicted_price * 0.9
+        price_range_max = predicted_price * 1.1
+    
+    logger.info(f"✅ Predicted price: {predicted_price:.2f}B VND")
+    
     return PricePredictionResponse(
-        predicted_price=round(avg_price, 2),
-        confidence=0.85,
-        price_range_min=round(avg_price * 0.9, 2),
-        price_range_max=round(avg_price * 1.1, 2),
-        market_average=round(avg_price, 2)
+        predicted_price=round(predicted_price, 2),
+        confidence=confidence_score,
+        price_range_min=round(price_range_min, 2),
+        price_range_max=round(price_range_max, 2),
+        market_average=round(market_average, 2)
     )
+
+# ============ RECOMMENDATIONS ENDPOINT ============
 
 @app.post("/api/recommendations", response_model=RecommendationResponse)
-def get_recommendations(request: RecommendationRequest, db: Session = Depends(get_db)):
-    target = db.query(FactProperties).filter(FactProperties.property_id == request.property_id).first()
-    if not target:
+def get_recommendations(
+    request: RecommendationRequest,
+    db: Session = Depends(get_db)
+):
+    """
+    Get similar property recommendations based on a property ID
+    
+    Parameters:
+    - property_id: ID của bất động sản
+    - limit: số lượng gợi ý (default: 5)
+    """
+    logger.info(f"🎯 Getting recommendations for property {request.property_id}")
+    
+    # Get the target property
+    target_property = db.query(FactProperties).filter(
+        FactProperties.property_id == request.property_id
+    ).first()
+    
+    if not target_property:
+        logger.error(f"❌ Property {request.property_id} not found")
         raise HTTPException(status_code=404, detail="Property not found")
     
-    # Dùng bedrooms_num đã sửa khớp với model của bạn
-    similar_properties = db.query(FactProperties).join(DimLocation).filter(
-        DimLocation.city == target.location.city,
-        FactProperties.property_id != target.property_id,
-        FactProperties.bedrooms_num == target.bedrooms_num
+    # Find similar properties
+    similar_properties = db.query(FactProperties).filter(
+        FactProperties.city == target_property.city,
+        FactProperties.property_id != request.property_id,
+        FactProperties.area > target_property.area * 0.8,
+        FactProperties.area < target_property.area * 1.2,
+        FactProperties.bedrooms == target_property.bedrooms
     ).limit(request.limit).all()
     
-    for s in similar_properties:
-        s.city = s.location.city
-        s.district = s.location.district
-        s.title = f"Bất động sản tại {s.district}"
-
+    # Calculate similarity scores
+    similarity_scores = [0.85 + (i * 0.01) for i in range(len(similar_properties))]
+    
+    logger.info(f"✅ Found {len(similar_properties)} similar properties")
+    
     return RecommendationResponse(
         similar_properties=similar_properties,
-        similarity_score=[0.95] * len(similar_properties)
+        similarity_score=similarity_scores
     )
+
+# ============ STATISTICS ENDPOINTS ============
 
 @app.get("/api/statistics", response_model=MarketStatistics)
 def get_statistics(db: Session = Depends(get_db)):
-    total_properties = db.query(func.count(FactProperties.property_id)).scalar()
-    cities_rows = db.query(DimLocation.city).distinct().all()
-    cities = [c[0] for c in cities_rows]
+    """Get market statistics"""
+    logger.info("📊 Getting market statistics")
     
-    avg_price = db.query(func.avg(FactProperties.price_million)).scalar() or 0
+    # Total properties
+    total_properties = db.query(func.count(FactProperties.property_id)).scalar()
+    
+    # Total cities
+    cities = db.query(FactProperties.city).distinct().all()
+    total_cities = len(cities)
+    
+    # Average price
+    avg_price = db.query(func.avg(FactProperties.price_milli)).scalar() or 0
+    
+    # Average area
     avg_area = db.query(func.avg(FactProperties.area)).scalar() or 0
     
+    # City statistics
     cities_stats = []
-    for city_name in cities:
-        city_data = db.query(FactProperties).join(DimLocation).filter(DimLocation.city == city_name).all()
+    for city in cities:
+        city_name = city[0]
+        city_data = db.query(FactProperties).filter(
+            FactProperties.city == city_name
+        ).all()
+        
         if city_data:
-            prices = [p.price_million for p in city_data]
+            prices = [p.price_milli for p in city_data]
+            areas = [p.area for p in city_data]
+            bedrooms = [p.bedrooms for p in city_data]
+            
             cities_stats.append(CityStatistics(
                 city=city_name,
                 total_properties=len(city_data),
-                average_price=round(sum(prices)/len(prices), 2),
-                average_area=round(sum([p.area for p in city_data])/len(city_data), 2),
-                average_bedrooms=round(sum([p.bedrooms_num for p in city_data])/len(city_data), 2),
+                average_price=round(sum(prices) / len(prices), 2),
+                average_area=round(sum(areas) / len(areas), 2),
+                average_bedrooms=round(sum(bedrooms) / len(bedrooms), 2),
                 min_price=min(prices),
                 max_price=max(prices)
             ))
-            
+    
+    logger.info(f"✅ Got statistics for {total_cities} cities")
+    
     return MarketStatistics(
         total_properties=total_properties,
-        total_cities=len(cities),
+        total_cities=total_cities,
         average_price=round(avg_price, 2),
         average_area=round(avg_area, 2),
         cities_stats=cities_stats
     )
 
+@app.get("/api/statistics/city/{city_name}")
+def get_city_statistics(city_name: str, db: Session = Depends(get_db)):
+    """Get statistics for a specific city"""
+    logger.info(f"📊 Getting statistics for {city_name}")
+    
+    city_data = db.query(FactProperties).filter(
+        FactProperties.city == city_name
+    ).all()
+    
+    if not city_data:
+        logger.error(f"❌ No data for city {city_name}")
+        raise HTTPException(status_code=404, detail=f"No data for city {city_name}")
+    
+    prices = [p.price_milli for p in city_data]
+    areas = [p.area for p in city_data]
+    bedrooms = [p.bedrooms for p in city_data]
+    
+    logger.info(f"✅ Got statistics for {city_name}")
+    
+    return {
+        "city": city_name,
+        "total_properties": len(city_data),
+        "average_price": round(sum(prices) / len(prices), 2),
+        "average_area": round(sum(areas) / len(areas), 2),
+        "average_bedrooms": round(sum(bedrooms) / len(bedrooms), 2),
+        "min_price": min(prices),
+        "max_price": max(prices),
+        "price_distribution": {
+            "min": min(prices),
+            "q1": sorted(prices)[len(prices) // 4],
+            "median": sorted(prices)[len(prices) // 2],
+            "q3": sorted(prices)[3 * len(prices) // 4],
+            "max": max(prices)
+        }
+    }
+
+# ============ ERROR HANDLERS ============
+
+@app.exception_handler(HTTPException)
+async def http_exception_handler(request, exc):
+    logger.error(f"❌ HTTP Error: {exc.detail}")
+    return {"error": exc.detail, "status_code": exc.status_code}
+
 if __name__ == "__main__":
     import uvicorn
+    logger.info("🚀 Starting FastAPI server...")
     uvicorn.run(app, host="0.0.0.0", port=8000)

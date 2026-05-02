@@ -35,7 +35,6 @@ class DatabaseManager:
                 location_id INTEGER PRIMARY KEY,
                 district VARCHAR(100),
                 city VARCHAR(100),
-                location_name VARCHAR(200)
             );
             """,
             
@@ -74,12 +73,10 @@ class DatabaseManager:
                 type_id INTEGER,
                 trans_id INTEGER,
                 area FLOAT,
-                price_milli FLOAT,
+                price_million FLOAT,
                 price_per_m2 FLOAT,
-                bedrooms INTEGER,
+                bedrooms_num INTEGER,
                 bathrooms_num INTEGER,
-                district VARCHAR(100),
-                city VARCHAR(100),
                 PRIMARY KEY (property_id, time_id, trans_id),
                 FOREIGN KEY (time_id) REFERENCES dim_time(time_id),
                 FOREIGN KEY (location_id) REFERENCES dim_location(location_id),
